@@ -1,0 +1,183 @@
+/**
+ * Your CSS goes here.
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Honk&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Honk&family=Neucha&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+#video-bg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+.header {
+    color: #f50093; 
+    padding: 50px 20px; 
+    text-align: center; 
+    font-family: 'Arial', sans-serif;
+}
+  
+.header h1 {
+    font-family: "Honk", system-ui;
+    font-size: 90px; 
+    margin-top: 0px;
+    margin-bottom: 10px; 
+    text-transform: uppercase;
+}
+  
+.header h3 {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 30px; 
+    font-style: italic; 
+    margin-top: 0; 
+}
+  
+
+.flexContainer {
+    display: flex;
+    width: 100%;
+    gap: 80px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.madLibsEdit {
+    width: 30%;
+    padding: 50px; 
+    background-color: rgba(160, 73, 73, 0.397);
+    border: solid pink;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px white, 0 0 28px rgb(41, 8, 255), 0 0 28px rgb(10, 22, 116);
+}
+
+.madLibsPreview {
+    width: 30%;
+    padding: 50px; 
+    background-color: rgba(160, 73, 73, 0.397);
+    border: solid pink;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px white, 0 0 28px pink, 0 0 28px red;
+  }
+  
+input {
+    font-family: "Neucha", cursive;     
+    font-size: 20px;
+    color: rgb(28, 207, 207);
+    width: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgba(167, 168, 159, 0.47);
+    border-radius: 8px;
+    border-color: rgb(177, 20, 93);
+    border: solid solid pink;
+}
+  
+input::placeholder {
+    text-align: center;
+    color: rgb(15, 25, 132);
+    font-size: 13px;
+  }
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    gap: 20px;
+    cursor: pointer;
+}
+
+.play {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(244, 240, 11);
+    border: solid rgb(170, 3, 30);
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px white;
+    text-align: center;
+}
+
+.play:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.reset {
+        font-family: "Chakra Petch", sans-serif;
+        font-size: 35px;
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: rgb(244, 240, 11);
+        border: solid rgb(170, 3, 30);
+        border-radius: 10px;
+        box-shadow: 1px 1px 2px white;
+        text-align: center;
+}
+
+.reset:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.stop {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(244, 240, 11);
+    border: solid rgb(170, 3, 30);
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px white;
+    text-align: center;
+}
+
+.stop:hover {
+transform: scale(1.2);
+cursor: pointer;
+}
+
+span {
+    color: rgb(239, 219, 176);
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 30px;
+    margin: 6px;
+}
+
+@media screen and (max-width: 1200px) {
+    .flexContainer{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+  
+@media screen and (max-width: 680px) {
+    .flexContainer{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .flexContainer{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+}
